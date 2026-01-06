@@ -82,11 +82,9 @@
 			<item weight="15" level="0" text="Parental control" entryID="parental_setup"><screen module="ParentalControlSetup" screen="ParentalControlSetup"/></item>
 			<item weight="15" level="0" text="Factory reset" entryID="factory_reset"><screen module="FactoryReset" screen="FactoryReset"/></item>
 			<item weight="15" level="0" text="Software update" entryID="software_update"><screen module="SoftwareUpdate" screen="UpdatePlugin"/></item>
-		</menu>
-			<menu key="install_image" level="0" text="Multiboot / FlashImage">
+		    </menu>
 			<item key="flash_image" weight="15" level="0" text="Flash image" requires="canFlashWithOfgwrite" ><screen module="FlashImage" screen="SelectImage"/></item>
 		    <item key="multiboot" text="Multiboot image selector" requires="canMultiBoot"><screen module="FlashImage" screen="MultibootSelection">1</screen></item>
-		</menu>		
 		<menu text="Standby / restart" entryID="standby_restart_list">
 			<id val="shutdown"/>
 			<item text="Sleep timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit"/></item>
